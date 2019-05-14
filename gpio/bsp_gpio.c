@@ -139,25 +139,17 @@ void GPIOG_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 						  GPIO_Speed_50MHz
   * @retval None
   */
-void GPIO_A_G_Init(char GPIO,uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef GPIO_Speed)
+void GPIO_A_G_Init(uint8_t GPIO,uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef GPIO_Speed)
 {
 	switch(GPIO)
-	{
-		case 'A':GPIOA_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case 'B':GPIOB_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case 'C':GPIOC_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case 'D':GPIOD_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case 'E':GPIOE_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case 'F':GPIOF_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case 'G':GPIOG_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-        
-		case '1':GPIOA_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case '2':GPIOB_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case '3':GPIOC_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case '4':GPIOD_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case '5':GPIOE_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case '6':GPIOF_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
-		case '7':GPIOG_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;		
+	{        
+		case 1:GPIOA_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
+		case 2:GPIOB_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
+		case 3:GPIOC_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
+		case 4:GPIOD_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
+		case 5:GPIOE_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
+		case 6:GPIOF_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;
+		case 7:GPIOG_Init(GPIO_Pin,GPIO_Mode,GPIO_Speed);break;		
 	}
 }
 
