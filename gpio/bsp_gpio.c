@@ -4,7 +4,7 @@
   * @author  edison
   * @version V1.0
   * @date    2019-xx-xx
-  * @brief   gpioÓ¦ÓÃº¯Êı½Ó¿Ú
+  * @brief   gpioåº”ç”¨å‡½æ•°æ¥å£
   ******************************************************************************
   * @attention
   *
@@ -16,8 +16,8 @@
 
 /* sys Function & define------------------------------------------------------*/
  /**
-  * @brief  IO³õÊ¼»¯
-  * @note   ÊäÈë¶ÔÓ¦Òı½ÅÓëÄ£Ê½£¬ËÙ¶È
+  * @brief  IOåˆå§‹åŒ–
+  * @note   è¾“å…¥å¯¹åº”å¼•è„šä¸æ¨¡å¼ï¼Œé€Ÿåº¦
 			GPIO_Mode_AIN = 0x0,
 			GPIO_Mode_IN_FLOATING = 0x04,
 			GPIO_Mode_IPD = 0x28,
@@ -38,11 +38,11 @@ void GPIOA_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);	 //Ê¹ÄÜ¶Ë¿ÚÊ±ÖÓ
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);	 //ä½¿èƒ½ç«¯å£æ—¶é’Ÿ
 
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //¶Ë¿ÚÅäÖÃ
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //ÍÆÍìÊä³ö
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO¿ÚËÙ¶ÈÎª50MHz
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //ç«¯å£é…ç½®
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //æ¨æŒ½è¾“å‡º
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IOå£é€Ÿåº¦ä¸º50MHz
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 }
 
@@ -50,11 +50,11 @@ void GPIOB_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 {
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);	 //Ê¹ÄÜ¶Ë¿ÚÊ±ÖÓ
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);	 //ä½¿èƒ½ç«¯å£æ—¶é’Ÿ
 
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //¶Ë¿ÚÅäÖÃ
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //ÍÆÍìÊä³ö
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO¿ÚËÙ¶ÈÎª50MHz
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //ç«¯å£é…ç½®
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //æ¨æŒ½è¾“å‡º
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IOå£é€Ÿåº¦ä¸º50MHz
 	GPIO_Init(GPIOB, &GPIO_InitStructure);
 }
 void GPIOC_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef GPIO_Speed)
@@ -62,11 +62,11 @@ void GPIOC_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);	 //Ê¹ÄÜ¶Ë¿ÚÊ±ÖÓ
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);	 //ä½¿èƒ½ç«¯å£æ—¶é’Ÿ
 
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //¶Ë¿ÚÅäÖÃ
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //ÍÆÍìÊä³ö
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO¿ÚËÙ¶ÈÎª50MHz
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //ç«¯å£é…ç½®
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //æ¨æŒ½è¾“å‡º
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IOå£é€Ÿåº¦ä¸º50MHz
 	GPIO_Init(GPIOC, &GPIO_InitStructure);
 }
 void GPIOD_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef GPIO_Speed)
@@ -74,11 +74,11 @@ void GPIOD_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);	 //Ê¹ÄÜ¶Ë¿ÚÊ±ÖÓ
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);	 //ä½¿èƒ½ç«¯å£æ—¶é’Ÿ
 
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //¶Ë¿ÚÅäÖÃ
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //ÍÆÍìÊä³ö
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO¿ÚËÙ¶ÈÎª50MHz
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //ç«¯å£é…ç½®
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //æ¨æŒ½è¾“å‡º
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IOå£é€Ÿåº¦ä¸º50MHz
 	GPIO_Init(GPIOD, &GPIO_InitStructure);
 }
 void GPIOE_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef GPIO_Speed)
@@ -86,39 +86,39 @@ void GPIOE_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOE, ENABLE);	 //Ê¹ÄÜ¶Ë¿ÚÊ±ÖÓ
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOE, ENABLE);	 //ä½¿èƒ½ç«¯å£æ—¶é’Ÿ
 
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //¶Ë¿ÚÅäÖÃ
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //ÍÆÍìÊä³ö
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO¿ÚËÙ¶ÈÎª50MHz
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //ç«¯å£é…ç½®
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //æ¨æŒ½è¾“å‡º
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IOå£é€Ÿåº¦ä¸º50MHz
 	GPIO_Init(GPIOE, &GPIO_InitStructure);
 }
 void GPIOF_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef GPIO_Speed)
 {
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOF, ENABLE);	 //Ê¹ÄÜ¶Ë¿ÚÊ±ÖÓ
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOF, ENABLE);	 //ä½¿èƒ½ç«¯å£æ—¶é’Ÿ
 
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //¶Ë¿ÚÅäÖÃ
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //ÍÆÍìÊä³ö
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO¿ÚËÙ¶ÈÎª50MHz
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //ç«¯å£é…ç½®
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //æ¨æŒ½è¾“å‡º
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IOå£é€Ÿåº¦ä¸º50MHz
 	GPIO_Init(GPIOF, &GPIO_InitStructure);
 }
 void GPIOG_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef GPIO_Speed)
 {
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOG, ENABLE);	 //Ê¹ÄÜ¶Ë¿ÚÊ±ÖÓ
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOG, ENABLE);	 //ä½¿èƒ½ç«¯å£æ—¶é’Ÿ
 
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //¶Ë¿ÚÅäÖÃ
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //ÍÆÍìÊä³ö
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO¿ÚËÙ¶ÈÎª50MHz
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //ç«¯å£é…ç½®
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //æ¨æŒ½è¾“å‡º
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IOå£é€Ÿåº¦ä¸º50MHz
 	GPIO_Init(GPIOG, &GPIO_InitStructure);
 }
 
  /**
-  * @brief  ËùÓĞIO³õÊ¼»¯
-  * @note   ÊäÈë¶ÔÓ¦Òı½ÅÓëÄ£Ê½£¬ËÙ¶È£¬Í³Ò»ÅäÖÃio¿Ú¿ÉÍ¬Ê±ÅäÖÃ
+  * @brief  æ‰€æœ‰IOåˆå§‹åŒ–
+  * @note   è¾“å…¥å¯¹åº”å¼•è„šä¸æ¨¡å¼ï¼Œé€Ÿåº¦ï¼Œç»Ÿä¸€é…ç½®ioå£å¯åŒæ—¶é…ç½®
 			GPIO_Mode_AIN = 0x0,
 			GPIO_Mode_IN_FLOATING = 0x04,
 			GPIO_Mode_IPD = 0x28,
@@ -131,7 +131,7 @@ void GPIOG_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 			GPIO_Speed_10MHz = 1,
 			GPIO_Speed_2MHz, 
 			GPIO_Speed_50MHz 
-  * @param  GPIO : 'A'~'B'/1~7/A~B
+  * @param  GPIO : 1~7/A~B
             GPIO_Pin : GPIO_Pin_1~GPIO_Pin_15/GPIO_Pin_ALL
             GPIO_Mode : IN/OUT
 			GPIO_Speed :  GPIO_Speed_10MHz
