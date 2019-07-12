@@ -39,7 +39,6 @@ void GPIOA_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);	 //使能端口时钟
-
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //端口配置
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO口速度为50MHz
@@ -51,7 +50,6 @@ void GPIOB_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);	 //使能端口时钟
-
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //端口配置
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO口速度为50MHz
@@ -63,7 +61,6 @@ void GPIOC_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);	 //使能端口时钟
-
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //端口配置
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO口速度为50MHz
@@ -75,7 +72,6 @@ void GPIOD_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);	 //使能端口时钟
-
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //端口配置
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO口速度为50MHz
@@ -87,7 +83,6 @@ void GPIOE_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOE, ENABLE);	 //使能端口时钟
-
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //端口配置
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO口速度为50MHz
@@ -98,7 +93,6 @@ void GPIOF_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOF, ENABLE);	 //使能端口时钟
-
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //端口配置
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO口速度为50MHz
@@ -109,7 +103,6 @@ void GPIOG_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
 	GPIO_InitTypeDef  GPIO_InitStructure;
 
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOG, ENABLE);	 //使能端口时钟
-
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin;			         //端口配置
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode; 		         //推挽输出
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed;		 //IO口速度为50MHz
@@ -134,7 +127,7 @@ void GPIOG_Init(uint16_t GPIO_Pin,GPIOMode_TypeDef GPIO_Mode,GPIOSpeed_TypeDef G
   * @param  GPIO : 1~7/A~B
             GPIO_Pin : GPIO_Pin_1~GPIO_Pin_15/GPIO_Pin_ALL
             GPIO_Mode : IN/OUT
-			GPIO_Speed :  GPIO_Speed_10MHz
+			      GPIO_Speed :  GPIO_Speed_10MHz
 						  GPIO_Speed_2MHz 
 						  GPIO_Speed_50MHz
   * @retval None
